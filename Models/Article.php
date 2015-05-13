@@ -2,8 +2,18 @@
 
 namespace App\Models;
 
-class Article
-    extends Model
-{
+use App\Interfaces\IActiveRecord;
 
+class Article
+    extends Model implements IActiveRecord
+{
+    public function save()
+    {
+
+    }
+
+    public function delete()
+    {
+
+    }
 }

@@ -1,0 +1,10 @@
+1. Singleton - одниночка
+
+2. Registry - реестр (чистый реестр - статический интерфейс)
+
+3. Singleton Registry - реестр-одиночка.
+    пример использования:
+    $reg = \App\Classes\SingletonRegistry::getInstance();
+    $reg->set('a',111);
+    echo $reg->get('a');
+
