@@ -2,7 +2,6 @@
 
 function __autoload($classname)
 {
-   // echo hello . ' ' . $classname . '<br>';
     $classpart = explode('\\',$classname);
     if (false==strpos('//',$classname)):
         $classpart = explode('\\',$classname);
