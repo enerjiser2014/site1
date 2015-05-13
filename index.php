@@ -3,7 +3,7 @@
 require_once __DIR__ . '/autoload.php';
 use App\Classes\Conf as Conf;
 use App\Classes\Registry as Registry;
-/*
+
 Registry::set("rrr","22");
 Registry::set("eee","33")u
 Registry::set("fff","44");
@@ -22,7 +22,7 @@ echo '<br>' . $reg->get('a');
 $article = new \App\Models\Article();
 $article->username = 'username22';
 $article->save();
-*/
+
 
 $test = \App\Classes\Test::getInstance();
 $test->setSomeval('Ivan');
