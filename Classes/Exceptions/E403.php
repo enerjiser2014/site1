@@ -2,8 +2,8 @@
 
 namespace App\Classes\Exceptions;
 
-class E403Exception
-    extends E404Exception
+class E403
+    extends E404
 {
     public function log($filename)
     {
