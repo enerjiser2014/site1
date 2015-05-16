@@ -2,8 +2,8 @@
 
 namespace App\Classes\Exceptions;
 
-class E404Exception
-    extends Exception
+class E404
+    extends \Exception
 {
     public function redirect($name)
     {
