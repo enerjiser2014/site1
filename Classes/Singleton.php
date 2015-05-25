@@ -1,5 +1,7 @@
 <?php
 
+// Антипаттерн Singleton
+
 namespace App\Classes;
 
 class Singleton

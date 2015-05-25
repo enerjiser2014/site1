@@ -14,4 +14,15 @@ class View
             echo '<br>';
         }
     }
+
+    public function displayArticle($temlpalte)
+    {
+        echo '<strong>' . $this->items->title . '</strong><br>';
+        echo $this->items->text;
+    }
+
+    public function displayAdmin($template)
+    {
+        echo '<strong>Здесь будет админка</strong>';
+    }
 }

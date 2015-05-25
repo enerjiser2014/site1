@@ -1,16 +1,27 @@
 <?php
 
+define('debug_flug', false);
+
 function __autoload($classname)
 {
     $classpart = explode('\\',$classname);
-    if (false==strpos('//',$classname)):
-        $classpart = explode('\\',$classname);
-        if ('App' == $classpart[0]):
+    if (false == strpos('//',$classname)) {
+        $classpart = explode('\\', $classname);
+        if ('App' == $classpart[0]){
             unset($classpart[0]);
             $load = __DIR__ . '/' . implode('/', $classpart) . '.php';
-            echo $load . '<br>';
-            require $load;
-        endif;
-    endif;
-}
 
+            if (true == debug_flug) {
+                echo $load . '<br>';
+            }
+
+            if (file_exists($load)) {
+                require $load;
+            }
+            else {
+                throw new Exception('autoload: <br>Класс с именем ' . $classname . ' не найден.');
+            }
+
+        }
+    }
+}

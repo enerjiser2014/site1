@@ -3,7 +3,7 @@
 namespace App\Classes\Exceptions;
 
 class E403
-    extends E404
+    extends \Exception
 {
     public function log($filename)
     {

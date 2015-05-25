@@ -1,21 +1,13 @@
 <?php
 
 namespace App\Models;
+use App\Traits\TMagicGetSet as TMagicGetSet;
+use App\Traits\TActiveRecord as TActiveRecord;
 
 abstract class Model
 {
-    protected $magicProp = [];
+    use TMagicGetSet;
+    use TActiveRecord;
     protected $id;
-
-    public function __get($name)
-    {
-        return $this->magicProp[$name];
-    }
-
-    public function __set($name, $value)
-    {
-        $this->magicProp[$name] = $value;
-    }
-
 }
 

@@ -7,7 +7,7 @@ class Conf
     public static function newsDb() {
         return [
             'dbhost' => 'localhost',
-            'dbname' => 'lesson10',
+            'dbname' => 'site1',
             'dbuser' => 'root',
             'dbpassword' => '',
         ];

@@ -18,7 +18,7 @@ class Db
 
     public function getRecord($class, $sql, $params = [])
     {
-        return $this->getRecords($class, $sql, $params )[0];
+        return $this->getRecords($class, $sql, $params)[0];
     }
 
     public function sqlExec($class, $sql,$params = [])
