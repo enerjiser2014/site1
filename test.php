@@ -1,5 +1,9 @@
 <?php
 
+
+
+exit;
+
 require_once __DIR__ . '/autoload.php';
 use App\Classes\Conf as Conf;
 use App\Classes\Registry as Registry;

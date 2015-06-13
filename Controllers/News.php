@@ -20,7 +20,6 @@ class News
         // Получаем данные из модели
 
         $route = explode('/',$_GET['__route']);
-        var_dump($route);
         $myArticle = new Article();
 
         $this->view->items = $myArticle->getArticle($route[2]);

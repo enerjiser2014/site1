@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Classes\Exceptions\E404;
 use App\Db\Db;
 use App\Interfaces\IActiveRecord;
 
@@ -20,7 +21,10 @@ class Article
     }
     public function getArticle($id)
     {
-        return $this->getOneRecord($id);
+        if (NULL == $article = $this->getOneRecord($id)) {
+            throw new E404('Models\Article.php:<br>Статья не обнаружена.');
+        }
+        return $article;
     }
 
     public function save()

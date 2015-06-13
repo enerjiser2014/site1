@@ -8,7 +8,13 @@ class View
 
     public function displayNews($template)
     {
-        foreach($this->items as $v) {
+        // MakeHeader(); {title}, {header}, {meta}
+        // MakeMenu();
+        // MakeNews();
+        // MakeArticle();
+        // MakeBanner();
+        // MakeFooter();
+        foreach ($this->items as $v) {
             echo '<strong>' . $v->title . '</strong><br>';
             echo $v->text . '<br><br>';
             echo '<br>';
@@ -25,4 +31,10 @@ class View
     {
         echo '<strong>Здесь будет админка</strong>';
     }
+
+    private function makeHeader()
+    {
+
+    }
+
 }

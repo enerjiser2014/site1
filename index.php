@@ -1,4 +1,5 @@
 <?php
+
 //http://site1/News/showNews/
 require_once __DIR__ . '/autoload.php';
 
