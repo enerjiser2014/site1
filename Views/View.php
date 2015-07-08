@@ -14,6 +14,8 @@ class View
         // MakeArticle();
         // MakeBanner();
         // MakeFooter();
+        echo GenHtmlTemplate::processHtml(__DIR__ . '/Templates/', 'template');
+
         foreach ($this->items as $v) {
             echo '<strong>' . $v->title . '</strong><br>';
             echo $v->text . '<br><br>';
@@ -29,7 +31,7 @@ class View
 
     public function displayAdmin($template)
     {
-        echo '<strong>Здесь будет админка</strong>';
+        echo GenHtmlTemplate::processHtml(__DIR__ . '/Templates/', 'admin');
     }
 
     private function makeHeader()
