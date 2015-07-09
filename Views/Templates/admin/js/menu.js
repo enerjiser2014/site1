@@ -4,8 +4,8 @@
 
 
 function makeActive() {
-    $("ul.navbar-nav > li").removeClass('active');
-    $(this).addClass('active');
+     $("ul.navbar-nav > li").removeClass('active');
+     $(this).addClass('active');
 }
 
 function makeDisabled() {
